@@ -1,0 +1,54 @@
+{
+  "name": "react-smart-card",
+  "version": "0.1.0",
+  "description": "React Card Component",
+  "main": "./build/index.js",
+  "peerDependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravi-kolla/react-smart-card.git"
+  },
+  "keywords": [
+    "react-smart-card",
+    "react-card-component",
+    "react-article-component"
+  ],
+  "author": "Ravi Teja Kolla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ravi-kolla/react-smart-card/issues"
+  },
+  "homepage": "https://github.com/ravi-kolla/react-smart-card#readme",
+  "dependencies": {
+    "css-loader": "^3.6.0",
+    "react": "^16.13.1",
+    "style-loader": "^1.2.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.3",
+    "@babel/core": "^7.10.3",
+    "@babel/node": "^7.10.3",
+    "@babel/polyfill": "^7.10.1",
+    "@babel/preset-env": "^7.10.3",
+    "@babel/preset-react": "^7.10.1",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "node-sass": "^4.14.1",
+    "react-dom": "^16.13.1",
+    "sass-loader": "^8.0.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
