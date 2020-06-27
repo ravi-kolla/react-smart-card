@@ -1,6 +1,6 @@
 {
   "name": "react-smart-card",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "React Card Component",
   "main": "./build/index.js",
   "peerDependencies": {
