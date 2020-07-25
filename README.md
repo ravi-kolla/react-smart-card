@@ -67,7 +67,7 @@ export default App;
 ###### Image Overlay Card
 To enable image overlay card component pass the prop cardType="overlay"
 
-![Alt text](screen-shots/react-smart-card2.PNG?raw=true "React Smart Card")
+![Alt text](screen-shots/card-overlay.PNG?raw=true "React Smart Card")
 
 # Style Guide
 
