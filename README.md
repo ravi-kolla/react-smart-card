@@ -23,7 +23,7 @@ function App() {
       heading: 'heading',
       des: 'description',
       linkText: 'Read More',
-      linkColor: 'link-green',
+      linkColor: 'rsc-link-green',
       linkUrl: 'https://www.npmjs.com/package/react-smart-card'
     };
     //data can be simply passed as string as well
@@ -37,7 +37,7 @@ function App() {
             <SmartCard title={myObj.heading} des={myObj.des} linkText={myObj.linkText} linkColor={myObj.linkColor} linkUrl={myObj.linkUrl}/>
           </div>
           <div className="col-md-4 pad-responsive">
-            <SmartCard title="Card component with button" des="Button default theme is blue & you can choose either Green or Red themes or you can specify any color you like! " btnUrl="/path" btnText="Know More" btnTheme="btn-green"/>
+            <SmartCard title="Card component with button" des="Button default theme is blue & you can choose either Green or Red themes or you can specify any color you like! " btnUrl="/path" btnText="Know More" btnTheme="rsc-btn-green"/>
           </div>
         </div>
         <div className="flex container">
@@ -83,7 +83,7 @@ Button Background : Blue
 Link theme is selected by passing value to linkTheme prop  
 **Example**
 ```
-linkTheme='link-green'
+linkTheme='rsc-link-green'
 ```
 
 ###### Button Themes
@@ -91,7 +91,7 @@ linkTheme='link-green'
 Button theme is selected by passing value to btnTheme prop  
 **Example**
 ```
-btnTheme='btn-green'
+btnTheme='rsc-btn-green'
 ```
 
 ###### Custom Colors

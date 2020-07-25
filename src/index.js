@@ -5,38 +5,38 @@ function SmartCard(props) {
   return (
     <>
     {props.cardType =="overlay" ?
-      <div class="overlay-card group">
+      <div class="rsc-overlay-card">
           {props.imgSrc ?
-          <img class="overlay-card-img" src={`${props.imgSrc}`} alt="Card image" /> : null }
-          <div class="overlay-card-content">
+          <img class="rsc-overlay-card-img" src={`${props.imgSrc}`} alt="Card image" /> : null }
+          <div class="rsc-overlay-card-content">
           {props.title ?
-            <p class="overlay-card-title card-title" style={{color: `${props.titleColor}`}}>{props.title}</p> : null }
+            <p class="rsc-overlay-card-title rsc-card-title" style={{color: `${props.titleColor}`}}>{props.title}</p> : null }
           {props.des ?
-            <p class="overlay-card-text card-des" style={{color: `${props.desColor}`}}>{props.des}</p> : null }
+            <p class="rsc-overlay-card-text rsc-card-des" style={{color: `${props.desColor}`}}>{props.des}</p> : null }
           {props.subText ?
-            <p class="overlay-card-text card-des" style={{color: `${props.subTextColor}`}}>{props.subText}</p> : null }
+            <p class="rsc-overlay-card-text rsc-card-des" style={{color: `${props.subTextColor}`}}>{props.subText}</p> : null }
             {props.linkText ?
-            <a href={`${props.linkUrl}`} className={`card-link ${props.linkTheme}`} style={{color: `${props.linkColor}`}}>{props.linkText}</a> : null }
+            <a href={`${props.linkUrl}`} className={`rsc-card-link ${props.linkTheme}`} style={{color: `${props.linkColor}`}}>{props.linkText}</a> : null }
             {props.btnText ?
-              <div className="ovelay-btn-container">
-              <a href={`${props.btnUrl}`} className={`card-btn ${props.btnTheme}`} style={{backgroundColor: `${props.btnBg}`, color: `${props.btnColor}`}}>{props.btnText}</a>
+              <div className="rsc-ovelay-btn-container">
+              <a href={`${props.btnUrl}`} className={`rsc-card-btn ${props.btnTheme}`} style={{backgroundColor: `${props.btnBg}`, color: `${props.btnColor}`}}>{props.btnText}</a>
               </div> : null }
           </div>
       </div>
     :
-      <div className="card list pad-responsive flex flex-column flex-justify-between">
+      <div className="rsc-card rsc-list rsc-pad-responsive rsc-flex rsc-flex-column rsc-flex-justify-between">
         {props.imgSrc ?
-        <div className="card-image-wrapper">
-          <img className="card-image" src={`${props.imgSrc}`} alt={`${props.altText}`} />
+        <div className="rsc-card-image-wrapper">
+          <img className="rsc-card-image" src={`${props.imgSrc}`} alt={`${props.altText}`} />
         </div> : null }
         {props.title ?
-        <p className="card-title" style={{color: `${props.titleColor}`}}>{props.title}</p> : null }
+        <p className="rsc-card-title" style={{color: `${props.titleColor}`}}>{props.title}</p> : null }
         {props.des ?
-        <p className="card-des" style={{color: `${props.desColor}`}}>{props.des}</p> : null }
+        <p className="rsc-card-des" style={{color: `${props.desColor}`}}>{props.des}</p> : null }
         {props.linkText ?
-        <a href={`${props.linkUrl}`} className={`card-link ${props.linkTheme}`} style={{color: `${props.linkColor}`}}>{props.linkText}</a> : null }
+        <a href={`${props.linkUrl}`} className={`rsc-card-link ${props.linkTheme}`} style={{color: `${props.linkColor}`}}>{props.linkText}</a> : null }
         {props.btnText ?
-          <a href={`${props.btnUrl}`} className={`card-btn ${props.btnTheme}`} style={{backgroundColor: `${props.btnBg}`, color: `${props.btnColor}`}}>{props.btnText}</a>
+          <a href={`${props.btnUrl}`} className={`rsc-card-btn ${props.btnTheme}`} style={{backgroundColor: `${props.btnBg}`, color: `${props.btnColor}`}}>{props.btnText}</a>
            : null }
       </div>
     }
