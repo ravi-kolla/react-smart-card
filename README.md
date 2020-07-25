@@ -6,8 +6,6 @@ Component can be adapted to any layout by simply wrapping it in the grid or colu
 ## Installation
 ```
 npm install --save react-smart-card
-
-import SmartCard from 'react-smart-card';
 ```
 
 ## Usage
@@ -64,6 +62,11 @@ export default App;
 
 ###### How does it look?
 ![Alt text](screen-shots/react-smart-card1.PNG?raw=true "React Smart Card")  
+![Alt text](screen-shots/react-smart-card2.PNG?raw=true "React Smart Card")
+
+###### Image Overlay Card
+To enable image overlay card component pass the prop cardType="overlay"
+
 ![Alt text](screen-shots/react-smart-card2.PNG?raw=true "React Smart Card")
 
 # Style Guide
