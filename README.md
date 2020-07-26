@@ -71,23 +71,43 @@ export default App;
 ![Alt text](screen-shots/react-smart-card2.PNG?raw=true "React Smart Card")
 
 ###### Image Overlay Card
-To enable image overlay card component pass the prop cardType="overlay"
+To enable image overlay card component pass the prop cardType="rsc-overlay"
 
 ```javascript
 <div className="flex container">
   <div className="col-md-4 pad">
-    <SmartCard cardType="overlay" imgSrc="/path" title="Header" des="Description" subText="Last updated 2 mins ago" />
+    <SmartCard cardType="rsc-overlay" imgSrc="/path" title="Header" des="Description" subText="Last updated 2 mins ago" />
   </div>
   <div className="col-md-4 pad">
-    <SmartCard cardType="overlay" imgSrc="/path" title="Header" des="Description" subText="Last updated 2 mins ago" linkUrl="/path" linkText="Read More" />
+    <SmartCard cardType="rsc-overlay" imgSrc="/path" title="Header" des="Description" subText="Last updated 2 mins ago" linkUrl="/path" linkText="Read More" />
   </div>
   <div className="col-md-4 pad">
-    <SmartCard cardType="overlay" imgSrc="/path" title="Header" des="Description" subText="Last updated 2 mins ago" btnUrl="/path" btnText="Know More" />
+    <SmartCard cardType="rsc-overlay" imgSrc="/path" title="Header" des="Description" subText="Last updated 2 mins ago" btnUrl="/path" btnText="Know More" />
   </div>
 </div>
 ```  
 
 ![Alt text](screen-shots/card-overlay.PNG?raw=true "React Smart Card")
+
+###### Image Horizontal Card
+To enable image horizontally to right or left in the card component pass the prop cardType either "rsc-image-left" or "rsc-image-right"
+
+```javascript
+<div className="flex container">
+  <div className="col-md-4 pad">
+    <SmartCard cardType="rsc-image-left" imgSrc="/path" title="Header" des="Description" authorImg="/path" authorName="Ravi Teja Kolla" subText="Feb 29, 2020" />
+  </div>
+  <div className="col-md-4 pad">
+    <SmartCard cardType="rsc-image-right" imgSrc="/path" title="Header" des="Description" btnUrl="/path" btnText="Read More" />
+  </div>
+  <div className="col-md-4 pad">
+    <SmartCard cardType="rsc-image-right" imgSrc="/path" title="Header" des="Description" linkUrl="/path" linkText="Know More" />
+  </div>
+</div>
+```  
+
+![Alt text](screen-shots/sideImage1.PNG?raw=true "React Smart Card")
+![Alt text](screen-shots/sideImage2.PNG?raw=true "React Smart Card")
 
 # Style Guide
 
@@ -120,6 +140,13 @@ You can choose custom colors by passing color CSS values as props.
 ```
 titleColor="#000", desColor="black", linkColor="rgba(180, 44, 1, 1)", btnBg="orange", btnColor="white"
 ```
+
+# Release Notes
+v0.4.0 Horizontal Image variant added
+v0.3.0 Image Overlay Variant added
+v0.2.0 Image card & Card component with Image & text added
+v0.1.0 Text card component added
+
 ### Contact Us
 
 + Ravi Teja Kolla [linkedin.com](https://www.linkedin.com/in/ravitejakolla)

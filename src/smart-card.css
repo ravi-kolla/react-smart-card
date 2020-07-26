@@ -6,21 +6,39 @@ p {
   background: rgb(255, 255, 255);
 }
 @media (min-width: 355px) {
-  .rsc-pad-responsive {
+  .rsc-pad {
     padding: 12px !important;
   }
 }
 @media (min-width: 768px) {
-  .rsc-pad-responsive {
+  .rsc-pad {
     padding: 18px !important;
   }
 }
 @media (min-width: 1024px) {
-  .rsc-pad-responsive {
+  .rsc-pad {
     padding: 20px !important;
   }
 }
+.rsc-p-b {
+  padding-bottom:20px;
+}
+.rsc-p-rl {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.rsc-m-r {
+  margin-right: 20px;
+}
+.rsc-m-b {
+  margin-bottom: 20px;
+}
+.rsc-font-bold {
+  font-weight: 700 !important;
+}
 .rsc-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex !important;
 }
 .rsc-flex-column {
@@ -102,9 +120,6 @@ p {
 .rsc-overlay-card {
     color: #fff;
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -142,4 +157,54 @@ p {
 .rsc-ovelay-btn-container {
   padding-top:10px;
   padding-bottom:20px;
+}
+.rsc-flex-child:first-child {
+    width: 30%;
+}
+.rsc-flex-child:last-child {
+    width: 70%;
+}
+.rsc-author-image {
+  max-width: 100%;
+  width: 2.5rem!important;
+  height: 2.5rem!important;
+  border-radius: 9999px!important;
+  box-sizing: border-box;
+  border: 0 solid #e2e8f0 /* 2 */;
+
+}
+.rsc-border {
+  border: 0 solid #e2e8f0 /* 2 */;
+  border-top-left-radius: .5rem!important;
+  border-top-right-radius: .5rem!important;
+  border-top-width: 1px!important;
+  border-right-width: 1px!important;
+  border-left-width: 1px!important;
+  border-bottom-width: 1px!important;
+  border-bottom-left-radius: .5rem!important;
+  border-bottom-right-radius: .5rem!important;
+  box-sizing: border-box;
+}
+.rsc-border-gray {
+  border: 0 solid #e2e8f0 /* 2 */;
+  --border-opacity: 1!important;
+  border-color: rgba(203,213,224,var(--border-opacity))!important;
+}
+.rsc-image-right .rsc-flex-child:first-child {
+  order: 2;
+}
+.rsc-image-left .rsc-flex-child:last-child {
+  order: 2;
+}
+.rsc-side-img {
+  width:100%;
+  height:100%;
+}
+.rsc-image-right .rsc-side-img {
+  border-top-right-radius: .5rem!important;
+  border-bottom-right-radius: .5rem!important;
+}
+.rsc-image-left .rsc-side-img {
+  border-top-left-radius: .5rem!important;
+  border-bottom-left-radius: .5rem!important;
 }
