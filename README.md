@@ -106,7 +106,7 @@ To enable image horizontally to right or left in the card component pass the pro
 </div>
 ```  
 
-![Alt text](screen-shots/sideImage1.PNG?raw=true "React Smart Card")
+![Alt text](screen-shots/sideImages1.PNG?raw=true "React Smart Card")
 ![Alt text](screen-shots/sideImage2.PNG?raw=true "React Smart Card")
 
 # Style Guide
@@ -142,12 +142,12 @@ titleColor="#000", desColor="black", linkColor="rgba(180, 44, 1, 1)", btnBg="ora
 ```
 
 # Release Notes
-v0.4.0 Horizontal Image variant added
-v0.3.0 Image Overlay Variant added
-v0.2.0 Image card & Card component with Image & text added
+v0.4.0 Horizontal Image variant added <br />
+v0.3.0 Image Overlay Variant added <br />
+v0.2.0 Image card & Card component with Image & text added <br />
 v0.1.0 Text card component added
 
-### Contact Us
+# Contact Us
 
 + Ravi Teja Kolla [linkedin.com](https://www.linkedin.com/in/ravitejakolla)
 
