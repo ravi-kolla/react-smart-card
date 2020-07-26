@@ -1,17 +1,15 @@
 # react-smart-card
-React Smart Card Component is a multi purpose / multi variant card component with features to show simple card component or card with link or button & image. Power is with you!   
-Add any color to card contents! No limitation.  
+React Smart Card Component is a multi purpose / multi variant card component with features shown below. Add any color to card contents! No limitation.  
 Component can be adapted to any layout by simply wrapping it in the grid or columns markup.
 
 ## Installation
 ```
-npm install --save react-smart-card
+npm install react-smart-card --save
 ```
 
 ## Usage
 ```javascript
-import React from 'react';
-import { render } from 'react-dom';
+
 import SmartCard from 'react-smart-card';
 
 function App() {
@@ -23,7 +21,6 @@ function App() {
       heading: 'heading',
       des: 'description',
       linkText: 'Read More',
-      linkColor: 'rsc-link-green',
       linkUrl: 'https://www.npmjs.com/package/react-smart-card'
     };
     //data can be simply passed as string as well
@@ -34,22 +31,7 @@ function App() {
             <SmartCard title={headingText} des="Text color can be customized" />
           </div>
           <div className="col-md-4 pad-responsive">
-            <SmartCard title={myObj.heading} des={myObj.des} linkText={myObj.linkText} linkColor={myObj.linkColor} linkUrl={myObj.linkUrl}/>
-          </div>
-          <div className="col-md-4 pad-responsive">
-            <SmartCard title="Card component with button" des="Button default theme is blue & you can choose either Green or Red themes or you can specify any color you like! " btnUrl="/path" btnText="Know More" btnTheme="rsc-btn-green"/>
-          </div>
-        </div>
-        <div className="flex container">
-          <div className="col-md-4 pad-responsive">
-            <SmartCard imgSrc={myObj3.image} altText="sample image"/>
-          </div>
-          <div className="col-md-4 pad-responsive">
-            <SmartCard imgSrc={myDataObj.image} altText="sample image"
-                      title={myDataObj.heading} titleColor="orange"
-                      des={myDataObj.des} desColor="red"
-                      btnText={myDataObj.btnText} btnUrl={myDataObj.btnUrl}
-                      btnBg="orange" btnColor="white"/>
+            <SmartCard title={myObj.heading} des={myObj.des} linkText={myObj.linkText} linkUrl={myObj.linkUrl}/>
           </div>
         </div>
       </>
@@ -58,7 +40,31 @@ function App() {
 
 export default App;
 ```  
+
 # UI Variations
+
+```javascript
+<div className="flex container">
+  <div className="col-md-4 pad">
+    <SmartCard title="Header" des="Description" />
+  </div>
+  <div className="col-md-4 pad">
+    <SmartCard title="Header" des="Description" linkUrl="/path" linkText="Read More" />
+  </div>
+  <div className="col-md-4 pad">
+    <SmartCard title="Header" des="Description" btnUrl="/path" btnText="Know More" />
+  </div>
+</div>
+<div className="flex container">
+  <div className="col-md-4 pad">
+    <SmartCard imgSrc="/image-path" />
+  </div>
+  <div className="col-md-4 pad">
+    <SmartCard imgSrc="/image-path" title="Header" des="Description" btnUrl="/path" btnText="Know More"
+               titleColor="orange" desColor="red" btnBg="orange" btnColor="white"/>
+  </div>
+</div>
+```
 
 ###### How does it look?
 ![Alt text](screen-shots/react-smart-card1.PNG?raw=true "React Smart Card")  
@@ -67,15 +73,29 @@ export default App;
 ###### Image Overlay Card
 To enable image overlay card component pass the prop cardType="overlay"
 
+```javascript
+<div className="flex container">
+  <div className="col-md-4 pad">
+    <SmartCard cardType="overlay" imgSrc="/path" title="Header" des="Description" subText="Last updated 2 mins ago" />
+  </div>
+  <div className="col-md-4 pad">
+    <SmartCard cardType="overlay" imgSrc="/path" title="Header" des="Description" subText="Last updated 2 mins ago" linkUrl="/path" linkText="Read More" />
+  </div>
+  <div className="col-md-4 pad">
+    <SmartCard cardType="overlay" imgSrc="/path" title="Header" des="Description" subText="Last updated 2 mins ago" btnUrl="/path" btnText="Know More" />
+  </div>
+</div>
+```  
+
 ![Alt text](screen-shots/card-overlay.PNG?raw=true "React Smart Card")
 
 # Style Guide
 
 ###### Default Colors
-Title : Black
-Description : Black
-Link : Blue
-Button Text : White
+Title : Black <br />
+Description : Black <br />
+Link : Blue <br />
+Button Text : White <br />
 Button Background : Blue
 
 ###### Link Text Themes
